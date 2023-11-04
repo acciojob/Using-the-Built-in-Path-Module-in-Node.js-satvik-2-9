@@ -1,5 +1,11 @@
+// main.js
 const path = require('path');
 
-// TODO: Use path.join to join two file path segments
+function joinPaths(input1, input2) {
+  const joinedPath = path.join(input1, input2);
+  console.log(joinedPath);
+}
 
-// TODO: Print the resulting path to the console
+const args = process.argv.slice(2);
+joinPaths(args[0], args[1]);
+
